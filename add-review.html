@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recenzia Filmu</title>
+    <style>
+        body {
+            background-color: rgb(108, 104, 112);
+        }
+     header {float: left;}
+
+        fieldset { color: black;
+        background-color: rgb(222, 217, 226);
+        font-variant: small-caps;
+        max-width: fit-content;
+        margin-left: 15%;
+        border: 10px rgb(4, 4, 14);
+        box-sizing: border-box;
+      
+    }
+     legend{ font-size: 22px;
+        font-weight: 500;
+     }
+     label, input { margin: 2%;}
+
+        a {color: rgb(245, 235, 237);
+        margin-top: 10%;
+        font-size: 1.1em;}
+    ul { list-style-type: none;
+        display: block}
+
+    .container {position: relative;
+    }
+        .blue {z-index: 1;
+                position: relative;
+                left: 25px;}
+        .red{z-index: 2;
+                position: absolute;
+                top: 25px;
+                }
+        .green{z-index: 3;
+            position: absolute;
+            left: 25px;
+            top: 25px;}
+        .pink {z-index: 4;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+        }
+    footer {margin-left: 130px;}
+    </style>
+
+</head>
+<body>
+
+<header>
+    <ul>
+        <li><a href="index.html" target="_parent">Domov</a></li>
+        <li><a href="nova.html" target="_blank">Rebricek filmov</a></li>
+       <li><a href="index.html" target="_self" >Trailer</a></li> 
+    </ul>
+</header>
+
+    <form action="/action_page.php">
+    <fieldset>
+    <legend>Pridaj recenziu filmu</legend>
+            <label for="film">Nazov filmu:</label>
+            <input type="text" id="film" name="film" required size="50"><br>
+
+            <label for="meno">Tvoje Meno</label>
+            <input type="text" id="meno" name="meno" required size="35"><br>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" required size="27"><br>
+
+        
+            <textarea name="recanzia filmu:" rows="20" cols="51" >
+            Recenzia...
+            </textarea><br>
+        
+            <label for="date">Kedy si film videl/a?</label>
+            <input type="date" name="datum" id="datum"><br>
+
+            <label for="range">Hodnotenie filmu</label>
+            <input type="range" name="range" id="range" value="0-100" min="0" max="100"><br>
+
+            <h4>Zaner filmu</h4>
+            <input type="radio" name="komedia" id="komedia">
+            <label for="komedia">Komedia</label><br>
+            <input type="radio" name="triller" id="triller">
+            <label for="triller">Akcny triller</label><br>
+            <input type="radio" name="drama" id="drama">
+            <label for="drama">Drama</label><br>
+            <input type="radio" name="scifi" id="scifi">
+            <label for="scifi">Sci-fi</label><br>
+            <input type="radio" name="fantasy" id="fantasy">
+            <label for="Fantasy">Fantasy</label><br>
+            <input type="radio" name="docfilm" id="docfilm">
+            <label for="docfilm">Dokumentarny film</label><br>
+        
+            <input type="submit" value="SUBMIT"><br>
+    </fieldset> 
+    </form>
+    <div class="container">
+        <div class="blue">
+            <svg width="100" height="100">
+                <rect width="100" height="100" 
+                style="fill:none;stroke-width:25;stroke:rgb(37, 16, 129)" />
+            </svg>
+        </div>
+        <div class="red">
+            <svg width="100" height="100">
+                <rect width="100" height="100" 
+                style="fill:none;stroke-width:25;stroke:rgb(129, 16, 16)" />
+            </svg>
+        </div>
+        <div class="green">
+            <svg width="100" height="100">
+                <rect width="100" height="100" 
+                style="fill:none;stroke-width:25;stroke:rgb(39, 129, 16)" />
+            </svg>
+        </div>
+        <div class="pink">
+            <svg width="100" height="100">
+                <rect width="100" height="100" 
+                style="fill:none;stroke-width:25;stroke:rgb(204, 30, 195)" />
+            </svg>
+        </div>
+    </div>
+
+<footer>
+    &#169; Anicka dusicka
+</footer>
+</body>
+</html>

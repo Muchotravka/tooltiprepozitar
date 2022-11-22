@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebríček najlepších filmov</title>
+    <script src="https://kit.fontawesome.com/a61ef92529.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: rgb(207, 202, 202);
+            font-variant: small-caps;
+            margin-bottom: 2%;
+            box-sizing: border-box;
+        }
+        nav {
+            background-color: rgb(35, 32, 68);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            height: 7vh;
+        }
+        nav div {
+            line-height: 7vh;
+        }
+        a {color: bisque;
+        text-decoration: none;}
+
+        tr:nth-child(odd) {background-color: rgb(157, 211, 193);}
+
+        table {
+            margin-left: 15%;
+            border-collapse: collapse;
+            background-color: rgb(238, 237, 232);
+            border-color: black;
+            border-width: 3px;
+            font-variant: small-caps;  
+        }
+       
+        td {
+            border: solid rgba(2, 2, 2, 0.438) 2px;
+            padding: 0.3em;
+            font-size: 1.1em;
+           
+        }
+        span {color: rgb(8, 110, 8);
+            font-weight: 700;
+        }
+        th {
+            background-color: rgb(184, 120, 243);
+            font-variant: small-caps;
+            font-size: 1.4em;
+            padding: 0.4em;
+            text-align: center;
+        }
+        h3, h2, h1 {
+            margin-left: 25%
+        }
+        p { 
+            font-size: 1.1em;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-variant: small-caps;
+            font-weight: 500;
+            display: block;
+            float:right;
+            width: 50%;
+            text-align: justify;
+            margin-right: 7%;
+        }
+        figure {
+           padding: 0%;
+           display: block;
+           float: left;
+           margin-left: 6%;
+ 
+        }
+        div { height: 2em;}
+        .Actors {margin-top: 25%;
+            margin-left: 10%;
+            padding: 1%;
+            font-variant: normal;
+            font-size: 1.2em;
+        }
+        .right{text-align: right;}
+
+        audio{margin-left: 25%;
+        margin-bottom: 1%;}
+
+        .banner { 
+        background-image: url('bubba-g2f8b70024_1280.jpg');
+        box-sizing: border-box;
+        width: 100%;
+        min-height:100px;
+       
+        }
+    #bannerh1 {display: block;
+        position:relative;
+        float: left;
+        min-width: 25%;
+        text-align: center;
+    }
+    #bannerp {
+    line-height: normal;
+    background-color: azure;
+    display: block;
+    box-sizing: border-box;
+    width: fit-content;
+    float: left;
+}
+    #watch { display: block;
+        float:left;}
+    li { list-style-type: none;}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;}
+
+  p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div><a href="./index.html">Domov</a> </div>
+        <div><a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a></div>
+        <div><a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a></div>
+        <div><a href="www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a></div>
+        <div><a href="www.linked.com"><i class="fa-brands fa-linkedin"></i></a></div>
+    </nav>
+    <div class="banner">
+          <h1 id="bannerh1">Forrest Gump</h1>
+          <p id="bannerp">Forrest Gump patri k najlepsim filmom so silnym pribehom a vtipom</p>
+          <button id="Watch">PLAY</button>  
+    </div><br>
+
+    <h2>Rebríček najlepších filmov</h2>
+   <audio controls autoplay>
+    <source src="the-beat-of-nature-122841.mp3">
+   </audio>
+
+
+    <table style="width: 60%;">
+           
+        <tr>
+        <th>poradie</th>
+        <th>názov filmu</th>
+        <th>rok vydania</th>
+        <th>hodnotenie v percentách</th>
+        </tr>
+        <tr>
+            <td class="right">1.</td>
+            <td><div class="tooltip">Vykúpenie z veznice Shawshank<span class="tooltiptext">Tim Robbins <img src="shawshank.jfif" alt=""></span></div></td>
+
+            <td>1944</td>
+            <td><span>93.7&#37;</span></td>
+        </tr>
+        <tr>
+            <td class="right">2.</td>
+            <td><div class="tooltip">Forrest Gump<span class="tooltiptext">Tom Hanks<img src="ForrestGump.jfif" alt=""></span></div></td>
+            <td>1994</td>
+            <td> <span>92.9&#37;</span> </td>
+        </tr>
+        <tr>
+            <td class="right">3.</td>
+            <td><div class="tooltip">Zelená míľa<span class="tooltiptext">Tom Hanks<img src="TomHanksGreenmile.jpg" alt=""></span></div></td>
+            <td>1999</td>
+            <td> <span>92.4&#37;</span> </td>
+        </tr>
+        <tr>
+            <td class="right">4.</td>
+            <td><div class="tooltip">Sedem<span class="tooltiptext">Morgan Freeman<img src="SevenMorganFreeman.jpg" alt=""></span></div></td>
+            <td>1995</td>
+            <td><span>92.4&#37;</span></td> 
+        </tr>
+        <tr>
+            <td class="right">5.</td>
+            <td><div class="tooltip">Prelet nad kukučím hniezdom<span class="tooltiptext">Jack Nicholson<img src="Jack_Nicholson_Forman.jpg" alt=""></span></div></td>
+            <td>1975</td>
+            <td><span>92,2&#37;</span> </td>
+        </tr>
+        <tr>
+            <td class="right">6.</td>
+            <td>Sindlerov Zoznam</td>
+            <td>1993</td>
+            <td> <span>92,3&#37;</span> </td>
+        </tr>
+        <tr>
+            <td class="right">7.</td>
+            <td>Kmotr</td>
+            <td>1972</td>
+            <td>91,8&#37;</td>
+        </tr>
+        <tr>
+            <td class="right">8.</td>
+            <td>Dvanásť rozhnevaných mužov</td>
+            <td>1957</td>
+            <td>91,4&#37;</td>
+        </tr>
+        <tr>
+            <td class="right">9.</td>
+            <td>Nedotknuteňí</td>
+            <td>2011</td>
+            <td>91,3&#37;</td>
+        </tr>
+        <tr>
+            <td class="right">10.</td>
+            <td>Pelíšky</td>
+            <td>1999</td>
+            <td>91,3&#37;</td>
+        </tr>
+        <tr>
+            <td class="right">11.</td>
+            <td>Terminátor 2: deň zúčtovania</td>
+            <td>1991</td>
+            <td>90,9&#37;</td>
+        </tr>
+        <tr>
+            <td class="right">12.</td>
+            <td>Pulp Fiction: Historky z podsvetia</td>
+            <td>1994</td>
+            <td>90,7&#37;</td>
+        </tr>
+        <tr>
+            <td class="right">13.</td>
+            <td>Kmotor II</td>
+            <td>1974</td>
+            <td>90,8&#37;</td>
+        </tr>
+        <tr>
+            <td class="right">14.</td>
+            <td>Pán prstenov: Spoločenstvo prstena</td>
+            <td>2001</td>
+            <td>90,06&#37;</td>
+        </tr>
+        <tr>
+            <td class="right">15.</td>
+            <td>Pán prstenov: Navrat Kráľa</td>
+            <td>2003</td>
+            <td>90,5&#37;</td>
+        </tr>
+    </table><br>
+
+    <article>
+            <h2>Top film: Vykúpenie z veznice Shawshank</h2><br>
+            <figure>
+                <figcaption>Avocadortoreador</figcaption>
+            <img src="https://cdn.pixabay.com/photo/2021/10/31/14/43/avocados-6757663__340.jpg" alt="Shawshank Redemption" width="500vw" height="320vh";>
+            </figure>
+            <p> Mladý bankéř Andy Dufresne (Tim Robbins) je v roce 1947 odsouzen za vraždu své ženy a jejího milence. Přesto, že tento čin popírá, čeká na něj dvojnásobný doživotní trest v obávané věznici Shawshank. Andy se snaží přizpůsobit vězeňskému životu a po krušných začátcích se sblíží s Redem (Morgan Freeman), jenž si tu odpykává svůj doživotní trest už dvacet let. Sílu, jak přežít zdejší peklo, Andy nachází v tajném snu a skryté naději na svobodu...
+            </p>
+           
+               <p>  <i class="fa-solid fa-video"></i>&nbsp; rezia:&nbsp; Frank Darabont<br>
+                    <i class="fa-solid fa-video"></i>&nbsp; kamera:&nbsp; Roger Deakins<br>
+                    <i class="fa-sharp fa-solid fa-skull-crossbones"></i>&nbsp; strih:&nbsp; Richard Francis-Bruce<br>
+                    <i class="fa-sharp fa-solid fa-skull-crossbones"></i>&nbsp; hudba:&nbsp; Thomas Newman<br>
+            </p>
+
+        </article><br>
+
+          
+    <div class="Actors">
+        <h3>Zoznam hercov z filmu Shawshank Redemption</h3>
+                <div><i class="fa-sharp fa-solid fa-person"></i>&nbsp;&nbsp; Tim Robbins v roli Andy Dufresne</div>
+                <div><i class="fa-sharp fa-solid fa-skull-crossbones"></i>&nbsp;&nbsp; Morgan Freeman v roli Ellis Boyd "Red" Redding</div> 
+                <div><i class="fa-sharp fa-solid fa-person"></i>&nbsp;&nbsp; Bob Gunton v roli Warten Norton</div>
+                <div><i class="fa-sharp fa-solid fa-person"></i>&nbsp;&nbsp; William Sadler v roli Heywood</div>
+                <div><i class="fa-sharp fa-solid fa-person"></i>&nbsp;&nbsp; Clansy Brown v roli Captain Hadley</div>
+                <div><i class="fa-sharp fa-solid fa-person"></i>&nbsp;&nbsp; Gill Bellows v roli Tommy</div>
+        </div>
+  
+</body>
+</html>
